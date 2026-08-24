@@ -1,6 +1,6 @@
 # About Me
 Hello! I am L3O4S5T.
-Write a short paragraph about your interests, skills, or goals.
+I want to become an engineer, I enjoy coding. I dislike sharing to much personal information. 
 
 ## Navigation
 [Notebook](notebook.md)
