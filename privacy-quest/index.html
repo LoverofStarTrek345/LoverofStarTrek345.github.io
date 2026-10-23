@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f5f0">
+    <meta name="description" content="Play Privacy Quest: make smart choices about your privacy and safety in everyday tech situations.">
+    <title>Privacy Quest — Play it smart online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Privacy Quest home">
+        <span class="brand-mark" aria-hidden="true">PQ</span>
+        <span>privacy<span class="brand-accent">quest</span></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#rights-court">Rights court</a>
+        <a href="#privacy-dispatch">The Dispatch</a>
+        <a href="#how-to-play">How to play</a>
+        <a href="#quick-tips">Quick tips</a>
+      </nav>
+      <a class="header-cta" href="#game">Start a quest <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="sparkle" aria-hidden="true">✦</span> YOUR DIGITAL LIFE, LEVELLED UP</div>
+          <h1 id="hero-title">Play it smart.<br><span>Stay you.</span></h1>
+          <p class="hero-intro">Your online world is full of little choices. Make the safer move, protect what matters, and earn your privacy pro status.</p>
+          <a class="primary-button" href="#game">Play the 5-minute game <span aria-hidden="true">→</span></a>
+          <div class="hero-note"><span class="note-icon" aria-hidden="true">🔒</span> No sign-up. No personal info. Just good instincts.</div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of a phone protected by a shield">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="float-tag tag-top"><span>✦</span> YOU'RE IN CONTROL</div>
+          <div class="phone">
+            <div class="phone-camera"></div>
+            <div class="phone-screen">
+              <div class="screen-top"><span>9:41</span><span>•••</span></div>
+              <div class="screen-lock">🔐</div>
+              <div class="screen-title">Your data.<br>Your call.</div>
+              <div class="screen-line"></div><div class="screen-line short"></div>
+              <div class="screen-toggle"><span>Privacy settings</span><i></i></div>
+            </div>
+          </div>
+          <div class="shield"><span aria-hidden="true">✓</span></div>
+          <div class="float-tag tag-bottom"><span>★</span> PRIVACY PRO IN TRAINING</div>
+          <span class="art-star star-one" aria-hidden="true">✳</span>
+          <span class="art-star star-two" aria-hidden="true">✦</span>
+          <span class="art-dot dot-one" aria-hidden="true"></span>
+          <span class="art-dot dot-two" aria-hidden="true"></span>
+        </div>
+        <div class="hero-bottom">
+          <span>REAL-LIFE SCENARIOS</span><i></i><span>QUICK, FRIENDLY TIPS</span><i></i><span>YOUR PACE, YOUR RULES</span>
+        </div>
+      </section>
+
+      <section class="game-section" id="game" aria-labelledby="game-heading">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-dot"></span> THE MAIN EVENT</div>
+            <h2 id="game-heading">What would <span>you</span> do?</h2>
+          </div>
+          <p>Five everyday moments. One choice at a time.<br>Trust your instincts—and learn as you go.</p>
+        </div>
+
+        <div class="game-card">
+          <div class="game-topline">
+            <div class="quest-label"><span class="quest-icon" aria-hidden="true">✦</span> PRIVACY QUEST <span class="quest-divider">/</span> <span id="round-label">READY WHEN YOU ARE</span></div>
+            <div class="score-pill"><span aria-hidden="true">★</span> <span id="score-label">0 points</span></div>
+          </div>
+          <div class="progress-wrap" aria-label="Game progress">
+            <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+            <span id="progress-label">0 / 5</span>
+          </div>
+          <div id="game-content" aria-live="polite">
+            <div class="game-welcome">
+              <div class="welcome-art" aria-hidden="true"><span>🧭</span><i>✦</i></div>
+              <div class="welcome-copy">
+                <h3>Your next move matters.</h3>
+                <p>From mystery links to app permissions, make the call you think is right. Every answer comes with a tip you can use in real life.</p>
+                <button class="primary-button game-button" id="start-button" type="button">Let’s go <span aria-hidden="true">→</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="game-footer"><span><span class="footer-lock" aria-hidden="true">♧</span> This game never asks for your personal information.</span><span class="footer-time">ABOUT 5 MIN <span aria-hidden="true">·</span> 5 SCENARIOS</span></div>
+        </div>
+      </section>
+
+      <section class="court-section" id="rights-court" aria-labelledby="court-heading">
+        <div class="court-heading">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-dot"></span> THE PEOPLE VS. BAD DIGITAL HABITS</div>
+            <h2 id="court-heading">Welcome to <span>Digital Rights Court.</span></h2>
+          </div>
+          <p>Take the role of the jury. Hear three quick cases, choose the strongest move, and learn the basics of your digital rights.</p>
+        </div>
+        <div class="court-card">
+          <div class="court-topline">
+            <div class="court-case-label"><span aria-hidden="true">⚖</span> THE PEOPLE'S COURT <span class="court-divider">/</span> <span id="court-round-label">COURT IS IN SESSION</span></div>
+            <div class="court-score"><span aria-hidden="true">★</span> <span id="court-score-label">0 / 3 calls</span></div>
+          </div>
+          <div class="court-progress-wrap" aria-label="Court game progress">
+            <div class="court-progress-track"><div class="court-progress-fill" id="court-progress-fill"></div></div>
+            <span id="court-progress-label">0 / 3</span>
+          </div>
+          <div id="court-content" aria-live="polite">
+            <div class="court-welcome">
+              <div class="gavel-art" aria-hidden="true"><span>⚖️</span><i>✦</i></div>
+              <div class="court-welcome-copy">
+                <div class="court-stamp">CASE FILES: YOUR RIGHTS ONLINE</div>
+                <h3>All rise for your rights.</h3>
+                <p>As juror, you'll hear three mini cases about personal data, app permissions, and online harm. Pick the best next step; the judge will explain the principle.</p>
+                <button class="primary-button game-button" id="court-start-button" type="button">Call the first case <span aria-hidden="true">→</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="court-footer">
+            <span><span class="footer-lock" aria-hidden="true">♧</span> Educational game, not legal advice. Laws and rights vary by location.</span>
+            <span class="footer-time">ABOUT 2 MIN <span aria-hidden="true">·</span> 3 CASES</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="dispatch-section" id="privacy-dispatch" aria-labelledby="dispatch-heading">
+        <div class="dispatch-header">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-dot"></span> THE PRIVACY DISPATCH</div>
+            <h2 id="dispatch-heading">Privacy, access &amp; safety.<br><span>What the sources say.</span></h2>
+          </div>
+          <div class="issue-stamp"><span class="issue-dot"></span> LAST REVIEWED <span>·</span> <time datetime="2026-10-21">21 OCTOBER 2026</time></div>
+        </div>
+        <p class="dispatch-intro">A source-linked briefing on selected internet law and policy. Legal claims below are limited to the named jurisdiction; campaign goals and policy arguments are identified as such rather than stated as law. Sources were checked on 21 October 2026.</p>
+
+        <div class="dispatch-grid">
+          <article class="dispatch-card">
+            <div class="dispatch-card-top"><span class="dispatch-icon icon-lilac" aria-hidden="true">✦</span><span class="dispatch-region">EUROPEAN UNION · AI</span></div>
+            <div class="dispatch-status">APPLICATION DATES VARY</div>
+            <h3>The EU AI Act moves into application</h3>
+            <p class="dispatch-summary">The European Commission states that the AI Act entered into force on 1 August 2024 and generally applies from 2 August 2026. Some provisions have separate dates: the Commission lists 2 December 2027 for certain high-risk use cases and 2 August 2028 for high-risk AI in regulated products.</p>
+            <div class="tradeoff"><div><strong class="upside">WHAT THE LAW DOES</strong><p>The Act uses a risk-based framework and sets obligations for prohibited practices, general-purpose AI, and high-risk systems.</p></div><div><strong class="watchout">SCOPE NOTE</strong><p>Not every AI system has the same obligations or start date. Consult the official timeline for the applicable category.</p></div></div>
+            <a class="source-link" href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" rel="noopener noreferrer">Source: European Commission, AI Act timeline <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="dispatch-card">
+            <div class="dispatch-card-top"><span class="dispatch-icon icon-peach" aria-hidden="true">◎</span><span class="dispatch-region">EUROPEAN UNION · PLATFORMS</span></div>
+            <div class="dispatch-status status-active">EU REGULATION</div>
+            <h3>Digital Services Act: platform duties and user options</h3>
+            <p class="dispatch-summary">The European Commission says the DSA requires platforms to give reasons for certain content-removal decisions and provide ways to appeal. It also sets rules for reporting illegal content and ad transparency; very large platforms must offer a non-personalised feed option.</p>
+            <div class="tradeoff"><div><strong class="upside">REQUIREMENTS LISTED BY THE COMMISSION</strong><p>The DSA includes user notices and appeals, reporting channels, ad disclosures, and additional duties for very large platforms.</p></div><div><strong class="watchout">SCOPE NOTE</strong><p>Specific duties vary by service type and size. The Commission’s overview describes the EU rules and their scope.</p></div></div>
+            <a class="source-link" href="https://digital-strategy.ec.europa.eu/en/policies/digital-services-act" target="_blank" rel="noopener noreferrer">Source: European Commission, DSA overview <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="dispatch-card">
+            <div class="dispatch-card-top"><span class="dispatch-icon icon-mint" aria-hidden="true">⌕</span><span class="dispatch-region">CALIFORNIA · PERSONAL DATA</span></div>
+            <div class="dispatch-status status-baseline">CALIFORNIA · CCPA/CPRA</div>
+            <h3>California privacy requests and opt-out rights</h3>
+            <p class="dispatch-summary">The California Privacy Protection Agency says eligible consumers may have rights to know, delete, or correct personal information and to opt out of certain sale or sharing. The CPPA FAQ describes request methods and Global Privacy Control opt-out signals.</p>
+            <div class="tradeoff"><div><strong class="upside">OFFICIAL REQUEST ROUTES</strong><p>The CPPA advises consumers to use the request methods in the business’s privacy policy and describes when covered businesses must honor qualifying opt-out preference signals.</p></div><div><strong class="watchout">SCOPE NOTE</strong><p>These are California rules; applicability, exceptions, and request procedures depend on the law and business involved.</p></div></div>
+            <a class="source-link" href="https://cppa.ca.gov/faq.html" target="_blank" rel="noopener noreferrer">Source: California Privacy Protection Agency FAQ <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+
+        <div class="dispatch-subhead">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> ACCESS, OWNERSHIP & PRESERVATION</div>
+          <p>These briefs distinguish legal rules from campaign aims and arguments made by named organizations.</p>
+        </div>
+        <div class="dispatch-grid culture-grid">
+          <article class="dispatch-card">
+            <div class="dispatch-card-top"><span class="dispatch-icon icon-peach" aria-hidden="true">⇄</span><span class="dispatch-region">COPYRIGHT · ACCESS</span></div>
+            <div class="dispatch-status status-baseline">COPYRIGHT · U.S. EXAMPLE</div>
+            <h3>Piracy: U.S. copyright rules on unauthorized copying</h3>
+            <p class="dispatch-summary">This brief concerns unauthorized copying or distribution of copyrighted works. Under U.S. law, copyright protects qualifying original works fixed in a tangible medium. The law also sets limitations and exceptions; whether a specific use is lawful depends on the facts and applicable law.</p>
+            <div class="tradeoff"><div><strong class="upside">STATUTORY FACT</strong><p>The U.S. Copyright Office states that copyright protects expression, not ideas. U.S. law includes limitations such as fair use.</p></div><div><strong class="watchout">SCOPE NOTE</strong><p>This is a U.S. example. Copyright terms, exceptions, and enforcement differ across jurisdictions.</p></div></div>
+            <a class="source-link" href="https://www.copyright.gov/what-is-copyright/" target="_blank" rel="noopener noreferrer">Source: U.S. Copyright Office, copyright basics <span aria-hidden="true">↗</span></a>
+            <a class="source-link secondary-source" href="https://www.copyright.gov/title17/92chap1.html#107" target="_blank" rel="noopener noreferrer">Source: U.S. Copyright Act, §107 (fair use) <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="dispatch-card">
+            <div class="dispatch-card-top"><span class="dispatch-icon icon-yellow" aria-hidden="true">◇</span><span class="dispatch-region">DIGITAL GOODS · OWNERSHIP</span></div>
+            <div class="dispatch-status">EU · DIRECTIVE 2019/770</div>
+            <h3>EU rules for digital content contracts</h3>
+            <p class="dispatch-summary">The EU Digital Content Directive (2019/770) sets rules for certain contracts supplying digital content or digital services to consumers, including conformity requirements and remedies. It does not establish a single worldwide rule that every digital purchase has the same ownership terms.</p>
+            <div class="tradeoff"><div><strong class="upside">WHAT THE DIRECTIVE COVERS</strong><p>EU member states must apply its rules to contracts within its scope, subject to the directive’s definitions and exclusions.</p></div><div><strong class="watchout">SCOPE NOTE</strong><p>The directive is not a general statement of ownership for every product or jurisdiction. Check the contract and your local consumer law.</p></div></div>
+            <a class="source-link" href="https://eur-lex.europa.eu/eli/dir/2019/770/oj/eng" target="_blank" rel="noopener noreferrer">Source: EUR-Lex, Directive (EU) 2019/770 <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="dispatch-card">
+            <div class="dispatch-card-top"><span class="dispatch-icon icon-lilac" aria-hidden="true">🎮</span><span class="dispatch-region">GAMES · STOP KILLING GAMES</span></div>
+            <div class="dispatch-status">CAMPAIGN · NOT A LAW</div>
+            <h3>Stop Destroying Videogames: campaign and initiative</h3>
+            <p class="dispatch-summary">Stop Killing Games is a campaign about video-game shutdowns. The related European Citizens’ Initiative is titled “Stop Destroying Videogames.” An initiative can invite the European Commission to consider action; the Commission is not obliged to propose legislation, and a proposal must be adopted by the relevant EU institutions to become law. This briefing does not claim the initiative’s current signature or Commission-response status.</p>
+            <div class="tradeoff"><div><strong class="upside">CAMPAIGN POSITION</strong><p>The initiative’s stated objective concerns rules for video games that become unplayable after a publisher ends support.</p></div><div><strong class="watchout">LEGAL STATUS</strong><p>A citizens’ initiative is not legislation. The official initiative tracker records its status; the Commission explains the EU process.</p></div></div>
+            <a class="source-link" href="https://citizens-initiative.europa.eu/initiatives/details/2024/000007_en" target="_blank" rel="noopener noreferrer">Source: EU initiative, “Stop Destroying Videogames” <span aria-hidden="true">↗</span></a>
+            <a class="source-link secondary-source" href="https://citizens-initiative.europa.eu/how-it-works_en" target="_blank" rel="noopener noreferrer">Source: European Commission, how initiatives work <span aria-hidden="true">↗</span></a>
+            <a class="source-link secondary-source" href="https://www.stopkillinggames.com/" target="_blank" rel="noopener noreferrer">Campaign source: Stop Killing Games <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="dispatch-card">
+            <div class="dispatch-card-top"><span class="dispatch-icon icon-mint" aria-hidden="true">▤</span><span class="dispatch-region">ARCHIVES · PRESERVATION</span></div>
+            <div class="dispatch-status status-active">U.S. COPYRIGHT ACT · §108</div>
+            <h3>U.S. copyright rules for library and archive copies</h3>
+            <p class="dispatch-summary">U.S. Copyright Act §108 allows qualifying libraries and archives to make certain copies under specified conditions. The statute includes limits on number, purpose, access, and commercial availability; it is not a general permission to copy or distribute any work.</p>
+            <div class="tradeoff"><div><strong class="upside">WHAT THE STATUTE SAYS</strong><p>Section 108 includes provisions for preservation and replacement copies, subject to the requirements in the statute.</p></div><div><strong class="watchout">SCOPE NOTE</strong><p>Section 108 is U.S. law and applies only when its conditions are met. Other countries have different rules.</p></div></div>
+            <a class="source-link" href="https://www.copyright.gov/title17/92chap1.html#108" target="_blank" rel="noopener noreferrer">Source: U.S. Copyright Act, §108 <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+
+        <div class="action-desk">
+          <div class="action-heading"><span class="action-icon" aria-hidden="true">✍</span><div><div class="eyebrow">CIVIC PARTICIPATION</div><h3>Ways to submit views on policy.</h3></div></div>
+          <div class="action-steps">
+            <div><span>01</span><p><strong>Identify the relevant body.</strong> Depending on jurisdiction and topic, this may be an elected representative, regulator, or consumer-protection agency.</p></div>
+            <div><span>02</span><p><strong>Check for an open consultation.</strong> Public consultations can provide a formal route to comment. Check the relevant official notice for who may comment, how to submit, and the deadline.</p></div>
+            <div><span>03</span><p><strong>Use official processes.</strong> Submit comments through the named channel, contact representatives, or use the regulator’s complaint process where available.</p></div>
+          </div>
+          <p class="action-note">Participation routes, deadlines, regulator powers, and complaint processes vary by jurisdiction. For the EU citizens’ initiative process described above, see the European Commission’s <a href="https://citizens-initiative.europa.eu/how-it-works_en" target="_blank" rel="noopener noreferrer">official explanation</a>.</p>
+        </div>
+        <p class="dispatch-disclaimer">Fact-check note: legal summaries cite primary government or legislative sources. Campaign aims are labeled as campaign positions. This is a dated snapshot as of 21 October 2026—not a live news feed, complete legal update, or legal advice. Laws and initiative statuses can change; verify current status and local applicability at the linked source.</p>
+      </section>
+
+      <section class="tips-section" id="how-to-play" aria-labelledby="how-heading">
+        <div class="tips-intro">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> SMALL MOVES, BIG DIFFERENCE</div>
+          <h2 id="how-heading">Your everyday<br>privacy toolkit.</h2>
+          <p>Privacy isn't about disappearing. It's about choosing what you share, and with whom.</p>
+          <a href="#game" class="text-link">Practice in the game <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="tip-grid" id="quick-tips">
+          <article class="tip-card">
+            <div class="tip-number">01</div><div class="tip-icon icon-lilac" aria-hidden="true">🔑</div>
+            <h3>Make passwords hard to guess</h3><p>Use a unique password for each account. A password manager can help you keep track.</p>
+          </article>
+          <article class="tip-card">
+            <div class="tip-number">02</div><div class="tip-icon icon-peach" aria-hidden="true">🕵️</div>
+            <h3>Pause before you tap</h3><p>Unexpected links or urgent messages? Check with the person or company through a trusted channel first.</p>
+          </article>
+          <article class="tip-card">
+            <div class="tip-number">03</div><div class="tip-icon icon-mint" aria-hidden="true">📍</div>
+            <h3>Share location thoughtfully</h3><p>Review which apps can see your location, and turn access off when an app doesn't need it.</p>
+          </article>
+          <article class="tip-card">
+            <div class="tip-number">04</div><div class="tip-icon icon-yellow" aria-hidden="true">🛡️</div>
+            <h3>Turn on extra protection</h3><p>Multi-factor authentication adds a second check to help protect your accounts.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="closing-banner">
+        <div class="closing-spark" aria-hidden="true">✦</div>
+        <div><div class="eyebrow">YOU'VE GOT THIS</div><h2>More confidence.<br>Fewer “uh-oh” moments.</h2></div>
+        <a href="#game" class="closing-button">Take the quest <span aria-hidden="true">→</span></a>
+      </section>
+    </main>
+    <footer><a class="brand footer-brand" href="#"><span class="brand-mark" aria-hidden="true">PQ</span><span>privacy<span class="brand-accent">quest</span></span></a><span>Make the internet a little safer, one choice at a time.</span><span>Stay curious. Stay in control. <span aria-hidden="true">✦</span></span></footer>
+  </body>
+</html>
